@@ -1,0 +1,59 @@
+version,test,result
+v4.6,"01 Call 1 quiet: customer speaks after lock, turn 1 of 3",pass
+v4.6,"02 Call 1 quiet: customer speaks after lock, turn 2 of 3",pass
+v4.6,"03 Call 1 quiet: customer speaks after lock, turn 3 of 3",pass
+v4.6,"04 Call 1 quiet: AC / fan starts, nobody speaks",pass
+v4.6,05 Call 1 quiet: vacuum cleaner / engine noise only,pass
+v4.6,06 Call 1 quiet: crowd babble only,pass
+v4.6,07 Call 1 quiet: dial tone,pass
+v4.6,08 Call 1 quiet: beeps (on/off),pass
+v4.6,09 Call 1 quiet: ringtone-like ring,pass
+v4.6,10 Call 1 quiet: TV / announcement voice,pass
+v4.6,11 Call 1 quiet: neighbour talking in the room,pass
+v4.6,12 Call 1 quiet: another person far from the phone,pass
+v4.6,"13 Call 1 quiet: another person near the phone, same loudness (score 0.32, kept)",fail
+v4.6,14 Call 1 quiet: door slam / knocks,pass
+v4.6,15 Call 1 quiet: typing / clicks,pass
+v4.6,16 Call 1 quiet: customer says one short word,pass
+v4.6,"17 Call 1 quiet: another near person says one short word (score 0.42, kept)",fail
+v4.6,18 Call 1 quiet: customer speaks over loud babble,pass
+v4.6,"19 Call 1 quiet: customer speaks again after noise group, turn 1 of 5",pass
+v4.6,"20 Call 1 quiet: customer speaks again after noise group, turn 2 of 5",pass
+v4.6,"21 Call 1 quiet: customer speaks again after noise group, turn 3 of 5",pass
+v4.6,"22 Call 1 quiet: customer speaks again after noise group, turn 4 of 5",pass
+v4.6,"23 Call 1 quiet: customer speaks again after noise group, turn 5 of 5",pass
+v4.6,24 Call 1 quiet: bot talking + AC / fan,pass
+v4.6,25 Call 1 quiet: bot talking + dial tone,pass
+v4.6,26 Call 1 quiet: bot talking + TV voice (echo-like),pass
+v4.6,27 Call 1 quiet: bot talking + another near person,pass
+v4.6,28 Call 1 quiet: bot talking + customer interrupts,pass
+v4.6,"29 Call 2 AC: customer speaks over the AC, turn 1 of 3",pass
+v4.6,"30 Call 2 AC: customer speaks over the AC, turn 2 of 3",pass
+v4.6,"31 Call 2 AC: customer speaks over the AC, turn 3 of 3",pass
+v4.6,32 Call 2 AC: only the AC for 6 seconds,pass
+v4.6,33 Call 2 AC: customer speaks over the AC (after 6 s of AC),pass
+v4.6,34 Call 2 AC: only the AC for 12 seconds,pass
+v4.6,35 Call 2 AC: customer speaks softly (about as loud as the AC),pass
+v4.6,"36 Call 2 AC: customer speaks very softly, quieter than the AC (score 0.32, only just)",pass
+v4.6,37 Call 2 AC: TV voice on top of the AC,pass
+v4.6,38 Call 2 AC: customer speaks over the AC (end),pass
+v4.6,"39 Call 3 soft customer: soft customer speaks, turn 1 of 3",pass
+v4.6,"40 Call 3 soft customer: soft customer speaks, turn 2 of 3",pass
+v4.6,"41 Call 3 soft customer: soft customer speaks, turn 3 of 3",pass
+v4.6,42 Call 3 soft customer: loud other person answers the bot (1st time),pass
+v4.6,43 Call 3 soft customer: soft customer speaks (after 1st loud person),pass
+v4.6,44 Call 3 soft customer: loud other person answers the bot (2nd time),pass
+v4.6,45 Call 3 soft customer: loud other person answers the bot (3rd time),pass
+v4.6,46 Call 3 soft customer: soft customer speaks (after 3rd loud person),pass
+v4.6,47 Call 3 soft customer: soft customer suddenly speaks loudly,pass
+v4.6,48 Call 3 soft customer: soft customer speaks (after loud turn),pass
+v4.6,"49 Call 3 soft customer: loud third person, different voice",pass
+v4.6,50 Call 3 soft customer: soft customer speaks (end),pass
+v4.6,Not automated: Short customer word after stray sound,skip
+v4.6,Not automated: Three non-customer turns in a row,skip
+v4.6,Not automated: Similar voice at the same loudness while the bot talks,skip
+v4.6,Not automated: Call too short or too noisy to lock,skip
+v4.6,Not automated: Phone handed to another person,skip
+v4.6,"Not automated: Lock made on the wrong voice, then recovering",skip
+v4.6,Not automated: Customer and another person in one turn (mixed),skip
+v4.6,Not automated: Voice heard before the greeting (AMD time),skip
